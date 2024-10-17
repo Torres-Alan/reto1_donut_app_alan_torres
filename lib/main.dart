@@ -11,10 +11,14 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+            debugShowCheckedModeBanner: false, // Esto quita el banner de debug
+
       home: const HomePage(),
       theme: ThemeData(
-          tabBarTheme: const TabBarTheme(indicatorColor: Colors.pink),
-        ),
+        tabBarTheme: const TabBarTheme(
+        indicatorColor: Colors.pink)),
     );
   }
 }
+
+

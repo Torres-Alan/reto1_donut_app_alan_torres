@@ -9,6 +9,10 @@ class DonutTab extends StatelessWidget {
     ["Ice Cream", "36", Colors.blue, "lib/images/icecream_donut.png"],
     ["Strawberry", "45", Colors.red, "lib/images/strawberry_donut.png"],
     ["Grape Ape", "84", Colors.purple, "lib/images/grape_donut.png"],
+    ["Choco", "95", Colors.brown, "lib/images/chocolate_donut.png"],
+    ["Ice Cream", "36", Colors.blue, "lib/images/icecream_donut.png"],
+    ["Strawberry", "45", Colors.red, "lib/images/strawberry_donut.png"],
+    ["Grape Ape", "84", Colors.purple, "lib/images/grape_donut.png"],
     ["Choco", "95", Colors.brown, "lib/images/chocolate_donut.png"]
   ];
 
@@ -20,7 +24,7 @@ class DonutTab extends StatelessWidget {
       itemCount: donutOnSale.length, //Longitud de los elementos.
       padding: const EdgeInsets.all(12),
       gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-          crossAxisCount: 2, childAspectRatio: 1/1.5), //Dos Columnas
+          crossAxisCount: 2, childAspectRatio: 1 / 1.5), //Dos Columnas
       itemBuilder: (context, index) {
         return DonutTile(
           donutFlavor: donutOnSale[index][0],
